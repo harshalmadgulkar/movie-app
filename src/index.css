@@ -36,9 +36,11 @@ body {
   height: 250px;
   border-radius: 10px;
   transition: transform .2s;
+  /* filter: grayscale(100%); */
 }
 .movie-card .left img:hover{
   transform: scale(1.2);
+  /* filter: grayscale(0%); */
 }
 .movie-card .right {
   position: relative;
