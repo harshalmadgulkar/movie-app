@@ -35,6 +35,10 @@ body {
 .movie-card .left img {
   height: 250px;
   border-radius: 10px;
+  transition: transform .2s;
+}
+.movie-card .left img:hover{
+  transform: scale(1.2);
 }
 .movie-card .right {
   position: relative;
