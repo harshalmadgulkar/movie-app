@@ -108,7 +108,7 @@ class MovieList extends React.Component {
     return (
       <>
         {this.state.movies.map((movie) => (
-          <MovieCard movie={movie} addStar={this.handleIncStar} reduceStar={this.handleDecStar} handleFav={this.handleFav} handleAddToCart={this.handleAddToCart} />
+          <MovieCard movie={movie} addStar={this.handleIncStar} reduceStar={this.handleDecStar} handleFav={this.handleFav} handleAddToCart={this.handleAddToCart} key={movie.id} />
         ))}
       </>
     );
