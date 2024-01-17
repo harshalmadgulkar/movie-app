@@ -77,7 +77,7 @@ class App extends React.Component {
   };
 
   render() {
-    const {cartCount, novies} = this.state;
+    const {cartCount, movies} = this.state;
     return (
       <>
         <Navbar cartCount={cartCount} />
@@ -86,4 +86,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
