@@ -3,6 +3,8 @@ import NavStyle from "./navbar.module.css";
 
 class Navbar extends React.Component {
   render() {
+    const {cartCount} = this.props;
+    console.log(cartCount);
     return (
       <div className={NavStyle.nav}>
         <div className={NavStyle.title}>MOVIE-APP</div>
@@ -11,7 +13,7 @@ class Navbar extends React.Component {
             alt="cart-icon"
             src="https://cdn-icons-png.flaticon.com/128/5542/5542671.png"
           />
-          <span className={NavStyle.cartCount}>4</span>
+          <span className={NavStyle.cartCount}> {cartCount} </span>
         </div>
       </div>
     );
